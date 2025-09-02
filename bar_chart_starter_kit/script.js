@@ -9,7 +9,7 @@ function genererSoejle() {
   list.appendChild(li);
   soejleArray.push(li);
 
-  if (soejleArray.length >= 20) {
+  if (soejleArray.length > 20) {
     const fjernet = soejleArray.shift();
     list.removeChild(fjernet);
   }
