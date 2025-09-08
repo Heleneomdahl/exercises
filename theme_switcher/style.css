@@ -1,0 +1,39 @@
+[data-filter="light"] {
+  --background-col: rgb(245, 229, 182);
+  --text-col: rgb(109, 89, 55);
+}
+
+[data-filter="dark"] {
+  --background-col: rgb(44, 30, 25);
+  --text-col: rgb(151, 155, 130);
+}
+[data-filter="hawaii"] {
+  --background-col: rgb(191, 45, 176);
+  --text-col: rgb(68, 218, 14);
+}
+
+h1 {
+  background-color: var(--background-col);
+  color: var(--text-col);
+}
+
+h2 {
+  background-color: var(--background-col);
+  color: var(--text-col);
+}
+
+body {
+  background-color: var(--background-col);
+}
+
+.link {
+  color: var(--text-col);
+}
+
+label {
+  color: var(--text-col);
+}
+
+p {
+  color: var(--text-col);
+}
