@@ -1,0 +1,48 @@
+body {
+  background: rgb(255, 255, 147); /* starter gul */
+  transition: background 0.5s ease; /* smooth overgang */
+}
+
+.hidden {
+  display: none;
+}
+
+#startBtn {
+  position: relative;
+  overflow: hidden;
+  background: #eee;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#startBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: lightgreen;
+  z-index: -1;
+}
+
+#startBtn.show::before {
+  animation: fillBtn 7s forwards;
+}
+
+#startBtn.full::before {
+  animation: none;
+  width: 100%;
+}
+
+@keyframes fillBtn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
