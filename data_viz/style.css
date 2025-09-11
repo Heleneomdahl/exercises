@@ -1,0 +1,39 @@
+/* Centrer tallet på hele skærmen */
+main,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* baggrund for hele siden */
+  font-family: Arial, sans-serif;
+}
+header,
+html {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#number {
+  font-size: 80px;
+  font-weight: bold;
+  color: #feb420;
+  text-align: center;
+  position: absolute;
+}
+
+#background {
+  background-color: #4caf50; /* baggrund for tallet */
+  border: 10px solid #1d9856; /* rammefarve */
+  border-radius: 40px;
+  padding: 80px 100px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Pulsering kun på selve tallet */
+.grow {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
