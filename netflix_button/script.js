@@ -11,9 +11,10 @@ setTimeout(() => {
 }, 1500);
 
 // 2. Når animationen er færdig, sker der en tydelig handling (fx: siden skifter farve, der linkes til en ny side, eller noget andet synligt).
-btn.addEventListener("transitionend", () => {
-  if (!mouseMoved) {
-    document.body.style.background = "pink"; // automatisk skift hvis musen ikke er bevæget
+btn.addEventListener("animationend", (e) => {
+  // Sørg for at det kun gælder fyld-animationen på knappen
+  if (e.target === btn && !mouseMoved) {
+    document.body.style.background = "pink"; // automatisk baggrundsskift efter animation
   }
 });
 

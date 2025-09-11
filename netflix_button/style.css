@@ -30,12 +30,12 @@ body {
 }
 
 #startBtn.show::before {
-  animation: fillBtn 7s forwards;
+  animation: fillBtn 7s forwards; /* fyld over 7 sek */
 }
 
 #startBtn.full::before {
-  animation: none;
-  width: 100%;
+  animation: none; /* stop animation */
+  width: 100%; /* fyld straks */
 }
 
 @keyframes fillBtn {
